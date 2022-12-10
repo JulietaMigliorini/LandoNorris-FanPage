@@ -1,0 +1,91 @@
+@import 'vars';
+
+.footer {
+    background-color: $colorNegro;
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &__paginas{
+        margin: 10px;
+        padding: 10px;
+        p {
+            a{
+                text-decoration: none;
+                color: $colorBlanco;
+                font-size: 1rem;
+                &:hover{
+                    background-color: $colorGrisTransparente;
+                    padding: 5px;
+                    color: $colorNegro;
+                }
+            }
+        }
+    }
+
+    &__suscripción{
+        background-color: $colorBlanco;
+        padding: 30px 80px 30px;
+        align-self: center;
+        width: 50%;
+    }
+}
+
+
+/* @media */
+
+@media (max-width: 768px) {
+    .footer {
+        background-color: $colorPrincipal2;
+        margin: 25px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__paginas{
+            margin: 10px;
+            padding: 10px;
+                                
+            p {
+                a{
+                    text-decoration: none;
+                    color: $colorNegro;
+                    font-size: 1rem;
+                    &:hover{
+                        background-color: $colorGrisTransparente;
+                        padding: 5px;
+                        color: $colorNegro;
+                    }
+                }
+            }
+        }
+
+        &__suscripción{
+            background-color: $colorNegro;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: $colorBlanco;
+            width: 100%;
+            h2 {
+                margin: 30px 30px 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .footer{
+        &__suscripción{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $colorBlanco;
+        }
+    }
+}

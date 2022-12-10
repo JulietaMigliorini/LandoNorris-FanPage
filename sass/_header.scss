@@ -1,0 +1,97 @@
+@import 'vars';
+
+.header {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    
+    &__logo {
+        img {
+            width: 50px;
+            padding: 10px;
+        }
+    }
+
+    &__hamburg{
+        background-color: $colorPrincipal2;
+        font-size: 20px;
+        border: none;
+        display: none;
+    }
+
+    &__menu {
+        ul{
+        display: flex;
+        list-style: none;
+        }
+        & li{
+            list-style: none;
+            a {
+                text-decoration: none;
+                margin: 10px;
+                background-color:#f2efef;
+                padding: 5px 15px;
+                border-radius: 2px;
+                color: black;
+                &:hover{
+                    background-color: rgb(200, 244, 42);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+/* @media */
+
+@media (max-width: 768px) {
+    .header {
+        height: 50px;
+        margin: 5px 25px 5px;
+
+        &__hamburg{
+            display: block;
+        }
+
+        &__menu {
+            ul{
+                flex-direction: column;
+                align-items: center;
+                margin: 0px 25px;
+                background-color: $colorPrincipal2;
+                position: fixed;
+                top: 70px;
+                width: 100%;
+                padding: 25px 0;
+                z-index: 10;
+                gap: 30px;
+
+                left: 0%;
+                transition: left 0.3s;
+                
+                & li{
+                    a {
+                        text-decoration: none;
+                        background-color: $colorPrincipal2;
+                        border-color: $colorNegro;
+                        border-style: groove;
+                        margin: 10px;
+                        padding: 5px 20px;
+                        border-radius: 2px;
+                        color: black;
+                        &:hover{
+                            background-color: $colorNegro;
+                            color: $colorBlanco;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

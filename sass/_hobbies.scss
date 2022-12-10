@@ -1,0 +1,47 @@
+@import 'vars';
+
+.title{
+    display: flex;
+    background-color: $colorGris;
+    padding: 5px;
+    justify-content: center;
+    margin: 25px;
+    letter-spacing: 10px;
+
+    &__titulo{
+        color: $colorNegro;
+        letter-spacing: 5px;
+    }
+}
+
+.bloque{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+    background-color: $colorGris;
+    gap: 20px;
+
+    &__card{
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: space-between;
+        gap: 50px;
+        
+        img{
+            height: 200xp;
+            width: 200xp;
+        }
+
+        h2{
+            color: red;
+            
+        }
+
+        p{
+            color: red;
+        }
+    }
+}

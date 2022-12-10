@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* COLORES */
+/* VARIABLES */
+/* COLORES */
+.header {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.header__logo img {
+  width: 50px;
+  padding: 10px;
+}
+.header__hamburg {
+  background-color: #d2ff00;
+  font-size: 20px;
+  border: none;
+  display: none;
+}
+.header__menu ul {
+  display: flex;
+  list-style: none;
+}
+.header__menu li {
+  list-style: none;
+}
+.header__menu li a {
+  text-decoration: none;
+  margin: 10px;
+  background-color: #f2efef;
+  padding: 5px 15px;
+  border-radius: 2px;
+  color: black;
+}
+.header__menu li a:hover {
+  background-color: rgb(200, 244, 42);
+  color: white;
+}
+
+/* @media */
+@media (max-width: 768px) {
+  .header {
+    height: 50px;
+    margin: 5px 25px 5px;
+  }
+  .header__hamburg {
+    display: block;
+  }
+  .header__menu ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 25px;
+    background-color: #d2ff00;
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 10;
+    gap: 30px;
+    left: 0%;
+    transition: left 0.3s;
+  }
+  .header__menu ul li a {
+    text-decoration: none;
+    background-color: #d2ff00;
+    border-color: black;
+    border-style: groove;
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 2px;
+    color: black;
+  }
+  .header__menu ul li a:hover {
+    background-color: black;
+    color: white;
+  }
+}
+/* VARIABLES */
+/* COLORES */
+.principal {
+  background-color: rgb(105, 54, 172);
+  margin: 25px;
+  position: relative;
+  text-align: center;
+}
+.principal__titulos img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 800px;
+}
+.principal__titulos h1 {
+  background-color: #f2efef;
+  width: 500px;
+  padding: 5px 5px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: 50%;
+}
+.principal__titulos h4 {
+  background-color: #f2efef;
+  width: 500px;
+  padding: 5px 5px;
+  font-size: 1rem;
+  color: black;
+  position: absolute;
+  top: 60%;
+}
+
+/* VARIABLES */
+/* COLORES */
+.footer {
+  background-color: black;
+  margin: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer__paginas {
+  margin: 10px;
+  padding: 10px;
+}
+.footer__paginas p a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.footer__paginas p a:hover {
+  background-color: #f2efef;
+  padding: 5px;
+  color: black;
+}
+.footer__suscripción {
+  background-color: white;
+  padding: 30px 80px 30px;
+  align-self: center;
+  width: 50%;
+}
+
+/* @media */
+@media (max-width: 768px) {
+  .footer {
+    background-color: #d2ff00;
+    margin: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer__paginas {
+    margin: 10px;
+    padding: 10px;
+  }
+  .footer__paginas p a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+  .footer__paginas p a:hover {
+    background-color: #f2efef;
+    padding: 5px;
+    color: black;
+  }
+  .footer__suscripción {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    width: 100%;
+  }
+  .footer__suscripción h2 {
+    margin: 30px 30px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .footer__suscripción {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+}
+/* VARIABLES */
+/* COLORES */
+.title {
+  display: flex;
+  background-color: #f2efef;
+  padding: 5px;
+  justify-content: center;
+  margin: 25px;
+  letter-spacing: 10px;
+}
+.title__titulo {
+  color: black;
+  letter-spacing: 5px;
+}
+
+.bloque {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+  background-color: #f2efef;
+  gap: 20px;
+}
+.bloque__card {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 50px;
+}
+.bloque__card img {
+  height: 200xp;
+  width: 200xp;
+}
+.bloque__card h2 {
+  color: red;
+}
+.bloque__card p {
+  color: red;
+}/*# sourceMappingURL=main.css.map */
